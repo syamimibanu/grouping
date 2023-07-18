@@ -1,0 +1,327 @@
+/* CSS for location */
+
+/* Three image containers and 50% for two, etc) */
+.column
+{
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* CSS for comment review*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.full-boxer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.box-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comment-box:hover
+{
+    margin-top: 12px;
+}
+
+.comment-box
+{
+    width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.3);
+}
+
+.Profile
+{
+    display: flex;
+    align-items: center;
+}
+
+.profile-image
+{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-image img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.Name
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.Name strong
+{
+    color: black;
+    font-size: 18px;
+}
+
+.Name span
+{
+    color: gray;
+    margin-top: 2px;
+}
+
+.comment p
+{
+    color: black;
+}
+
+/* CSS menu */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+  
+.banner_section_2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+  
+.box_main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.box-top
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.broadband_text
+{
+    margin-top: 12px;
+}
+  
+.comment-box
+{
+    width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 3px 25px rgba(0,0,0,0.3);
+}
+  
+.icon
+{
+    display: flex;
+    align-items: center;
+}
+  
+.text
+{
+    width: 70px;
+    height: 70px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  
+.row2
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+/* CSS menu */
+
+Style.css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section.menus-area
+{
+    position: relative;
+    z-index: 2;
+    padding: 100px 0;
+    color: rgb(18, 18, 19);
+}
+
+section.menus-area::before
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.section-title
+{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h4
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+.menus 
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-items 
+{
+    flex-basis: 32%;
+}
+
+.title 
+{
+    background-color: #E9B384;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.single-menu 
+{border: 1px solid #333;padding: 21px;text-align: center;position: relative;transition: .3s;margin-bottom: 30px;}
+
+.single-menu span
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #7C9D96;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px 0 0;
+}
+
+.single-menu img
+{
+    max-width: 200px;
+    border: 1px solid #333;
+    padding: 3px;
+    transition: .3s;
+}
+
+.single-menu h4
+{
+    border-bottom: 1px dashed #333;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.single-menu a
+{
+    display: inline-block;
+    color: #7C9D96;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.single-menu:hover img
+{
+    border-radius: 50%;
+}
+
+.single-menu:hover
+{
+    border-color: #7C9D96;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .container{
+        width: 350px;
+    }
+}
