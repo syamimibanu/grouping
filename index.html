@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Méow Méow Cafe</title>
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root
+{
+    --color-primary: #A1CCD1;
+    --color-secondary: #F4F2DE;
+    --color-extra: #E9B384;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body
+{
+    font-family: 'Poppins' , sans-serif;
+    line-height: 1.4;
+    color: #E9B384;
+    min-height: 2000px;
+}
+
+a
+{
+    color: #7C9D96;
+}
+
+ul
+{
+    list-style: none;
+}
+
+p
+{
+    margin: 5px 0;
+    line-height: 1.7;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/*Navbar */
+
+.navbar
+{
+    width: 100%;
+    height: auto;
+    background-color: #7C9D96;
+    padding: 18px;
+    box-shadow: 0 1px 3px rgb(235, 229, 229),
+    0 2px 2px rgb(255, 255, 255),
+        0 0 2px rgb(255, 255, 255);
+}
+
+.navbar-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul
+{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li
+{
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a
+{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover
+{
+    color: var(--color-primary);
+}
+
+
+.navbar-brand img
+{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-nav-left
+{
+    text-transform: uppercase;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.navbar-nav-right li:first-child a
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-nav-right img
+{
+    height: 50px;
+    width: 50px;
+    margin-right: -10px;
+}
+
+/* Buttons*/
+
+.btn
+{
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px #fffbfb solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-dark-outline
+{
+    border-color: #ffffff;
+    color: #000000;
+}
+
+.btn-dark
+{
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.container
+{
+    background-image: url('');
+}
+
+/* Hero Section*/
+
+.hero
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    background: linear-gradient(0deg,  rgba(1, 1, 3, 1) 8%, rgba(255,225,225,0) 50%)
+}
+
+.hero .content
+{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1
+{
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span
+{
+    color: var(--color-primary);
+}
+
+.hero .content p
+{
+    font-size: 1.6rem;
+    margin-top: 1 rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.hero .content .cta
+{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+/*About Section*/
+.about
+{
+
+    padding: 7rem 7% 1.4rem;
+}
+
+.about h2
+{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span
+{
+    color: var(--color-primary);
+}
+
+/*Three image containers (use 25% for four, and 50% for two, etc)*/
+
+.column
+{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/*Clear floats after image containers */
+
+.row::after
+{
+    content: "";
+    Clear: both;
+    display: table;
+}
+
+h3
+{
+    text-align: center;
+}
+
+table,th,td
+{
+    border-collapse: collapse;
+    border: 1px solid #aa7e41;
+}
+
+td
+{
+    text-align: center;
+}
+
+th,td
+{
+    padding: 5px;
+}
+
+body
+{
+    background-color: #000000;
+}
+
+</style>
+
+<body>
+    
+    <!--Navbar Start-->
+       <div class="container"></div>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="Méow Méow Cafe"/>
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="menu.html" target="_blank">Menu</a>
+                </li>
+                <li>
+                    <a href="comment review.html" target="_blank">Customer Review</a>
+                </li>
+                <li>
+                    <a href="contact.html" target="_blank">Contact Details</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="location.html" target="_blank">
+                        <img src="image/marker black.png" alt="find store">
+                        <span>Find a Store</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Hero Section Start-->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Let's Enjoy A Cup of <span>Coffee</span></h1>
+            <p>We believe a cup of coffee with our cats</p>
+            <p>are one of the most important,</p>
+            <p>simple pleasures in life.</p>
+            </main>
+    </section>
+    <!--Hero Section End-->
+
+    <!--About Section Start-->
+    <section id="about" class="about">
+        <h2><span>About</span> Us</h2>
+
+           <div class="row">
+            <div class="column">
+                <img src="image/kopi 1.jpg" alt="Kopilih Bahagia" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/kopi 2.jpg" alt="Latte sepahit" style="width: 100%;">
+            </div>
+            <div class="column">
+                <img src="image/kopi 3.jpg" alt="Chocolate Sendu" style="width: 100%;">
+            </div>
+           </div>
+           
+           
+            <div class="content">
+                <h3><font color="#aa7e41"> Why Should You Choose Our Cafe?</font></h3>
+                <p> Different from other cafe, Méow Cafe provide the best and expensive experience for our customers where we serve our best coffee together
+                    with the friendly and lovable environment. There is many type of cats that we have in our cafe where customers can pet and enjoy the coffee
+                    together with our cats. Cat lovers and coffee lovers are reccommended to come to our cafe. We can sure that our cats are lovely with customers. Do not forget that we also serve types of coffee which could
+                    fit with our customers liking.</p>
+
+                     <br>
+                 <p>We have only one branch which is our main branch at Jalan Tun H S Lee, City Centre, 50100, Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</p>
+            </div>
+        </div>
+    </section>
+
+    <p>
+        <table style="width: 100%;" class="center">
+            <tr>
+                <th>Vision</th>
+                <th>Mission</th>
+                <th>Objective</th>
+            </tr>
+
+            <tr>
+                <td>"We want to create a friendly and lovable cafe for our customers to enjoy their coffee, mainly for cats and coffee lovers."</td>
+                <td>“Our mission as a cat cafe business is to introduce a new cafe environment here, in Malaysia.”</td>
+                <td>“We want the Méow Méow Cafe to be recognize in Kuala Lumpur.”</td>
+            </tr>
+
+        </table>
+    </p>
+
+    <!--About Section End-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
